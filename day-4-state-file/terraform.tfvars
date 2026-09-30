@@ -1,0 +1,8 @@
+vpc-cidr= "10.0.0.0/16"
+vpc-dev = "vpc-dev"
+subnet-cidr = "10.0.1.0/24"
+pub-sub-1 = "pub-subnet-1"
+ami-id = "ami-07d9128fdd49fb51a"
+instance-type = "t3.micro"
+dev-instance-name = "bastion-host"
+#instance-type = "t2.nano"
