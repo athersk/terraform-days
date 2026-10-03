@@ -12,6 +12,6 @@ resource "aws_subnet" "dev-subnet01"{
 
 resource "aws_instance" "dev" {
     ami ="ami-0d53cc9bd365ad65b"
-    instance_type = "t2.nano"
+    instance_type = "t3.micro"
     subnet_id = aws_subnet.dev-subnet01.id
 }
