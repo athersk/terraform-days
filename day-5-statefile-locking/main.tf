@@ -9,3 +9,9 @@ resource "aws_subnet" "dev-subnet01"{
     cidr_block = "10.0.1.0/24"
     vpc_id = aws_vpc.dev.id 
 }
+
+resource "aws_instance" "dev" {
+    ami =""
+    instance_type = "t2.nano"
+    subnet_id = aws_subnet.dev-subnet01.id
+}
