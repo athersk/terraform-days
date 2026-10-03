@@ -3,6 +3,7 @@ terraform {
         bucket= "mys3test-state-01"
         key = "terraform-statefile/terraform.tfstate"
         region ="us-west-2"
-        use_lockfile=true
+        dynamodb_table = "terraform-statefile-locking"
+        #use_lockfile=true
     }
 }
